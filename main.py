@@ -1,8 +1,7 @@
-
-from telegram_bot import start_bot
+# Entry point: starts AI and Telegram bot
 from trader import TraderBot
+from telegram_bot import start_bot
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     bot = TraderBot()
-    bot.run()
     start_bot(bot)
